@@ -7,35 +7,36 @@ abstract component displayName="account" hint="Abstract account CFC."{
 	public account function init(
 		required numeric accountNumber,
 		required numeric balance
-		// required customer owner
 	){
-		this.accountNumber = arguments.accountNumber;
-		this.balance = arguments.balance;
+		variables.accountNumber = arguments.accountNumber;
+		variables.balance = arguments.balance;
 		// this.owner = arguments.owner;
 		return this;
 	}
 
-	public customer function getOwner(){
+	/* public customer function getOwner(){
 		return this.owner;
 	}
 
 	public numeric function getAccountNumber(){
 		return this.accountNumber;
-	}
+	} */
 	
 	public numeric function getBalance() {
-		return this.balance;
+		return variables.balance;
 	}
 
 	public void function deposit(
-		required numeric amount
+		required numeric depositAmount
 	){
-		if (amount <= 0) {
+		if(arguments.depositAmount <= 0){
 			throw(type="negative deposit");
-		} else {
-			this.balance = this.balance + amount;
+		}else{
+			variables.balance = variables.balance + arguments.depositAmount;
 		}
 	}
 
-	public abstract void function withdraw(required numeric amount);
+	public abstract void function withdraw(
+		required numeric withdrawAmount
+	);
 }

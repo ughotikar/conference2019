@@ -7,7 +7,7 @@
 
 	<body>
 		<div style="width: 800px; margin: 10px auto;">
-			<h2>Hello CF Campers!</h2>
+			<h2>Hello CF Summit 2019!</h2>
 			<div style="border: 3px solid #333; padding: 10px"><cfoutput>#body#</cfoutput></div>
 		</div>
 	</body>

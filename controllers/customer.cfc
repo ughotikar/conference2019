@@ -1,8 +1,7 @@
-component displayname="customer controller" accessors=true{
-	property name="name";
-	property name="address";
-	property name="email";
-	property customerService;
+component accessors=true{
+	property string name;
+	property string address;
+	property string email;
 
 	public void function default(struct rc = {}) {
 		// dump(this);
@@ -10,14 +9,14 @@ component displayname="customer controller" accessors=true{
 	}
 
 	public void function updateName(required string name) {
-		this.name = arguments.name;
+		variables.name = arguments.name;
 	}
 
 	public void function updateAddress(required string address) {
-		this.address = arguments.address;
+		variables.address = arguments.address;
 	}
 
 	public void function updateEmail(required string email) {
-		this.email = arguments.email;
+		variables.email = arguments.email;
 	}
 }
