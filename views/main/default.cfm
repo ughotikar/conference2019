@@ -10,5 +10,5 @@
 		<li><a href="http://framework-one.github.io/documentation/using-subsystems.html" target="_blank">Using Subsystems In FW/1</a></li>
 		<li><a href="http://framework-one.github.io/documentation/reference-manual.html" target="_blank">FW/1 Reference Manual</a></li>
 	</ul>
-	<a href="#buildURL('customer.default')#">Customer Page!</a><br />
+	<a href="/tests/runner.cfm">Tests Page!</a><br />
 </cfoutput>

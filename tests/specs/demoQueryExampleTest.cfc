@@ -3,7 +3,7 @@ component extends="testbox.system.BaseSpec"{
 	/*********************************** LIFE CYCLE Methods ***********************************/
 
 	function beforeAll(){
-		customer = new controllers.customer(name="Foo", address="Virginia", email="foo@foo.com");
+		
 	}
 
 	function afterAll(){
